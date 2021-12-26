@@ -13,6 +13,21 @@ public class Jaar {
     public String toString() {
         return String.valueOf(jaar);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Jaar jaar1 = (Jaar) o;
+
+        return jaar == jaar1.jaar;
+    }
+
+    @Override
+    public int hashCode() {
+        return jaar;
+    }
 }
 
 
