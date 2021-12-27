@@ -10,6 +10,9 @@ public class Rekening {
 
 
     public void stort(BigDecimal bedrag){
+        if (bedrag.compareTo(BigDecimal.ZERO) <= 0){
+            throw new IllegalArgumentException("Bedrag moet positief zijn");
+        }
         saldo =saldo.add(bedrag);
     }
 
