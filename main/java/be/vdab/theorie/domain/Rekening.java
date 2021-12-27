@@ -19,5 +19,6 @@ public class Rekening {
     public BigDecimal getSaldo(){
        return saldo;
     }
-
 }
+
+
