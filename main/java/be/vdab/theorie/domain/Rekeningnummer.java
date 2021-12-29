@@ -19,13 +19,13 @@ public class Rekeningnummer {
         }
         var teControlerenNummer= Long.valueOf(matcher.group(2) + "1114" + matcher.group(1));
         if (teControlerenNummer % 97 != 1){
-            throw  new IllegalArgumentException("Nummer bevat verkeerde cijfers");
+            throw new IllegalArgumentException("Nummer bevat verkeerde cijfers");
         }
         this.nummer = nummer;
     }
 
     @Override
     public String toString() {
-                                                                                                    ;
+    return nummer;
     }
 }
